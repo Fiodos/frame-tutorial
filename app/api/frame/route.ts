@@ -6,12 +6,13 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
   const idAsNumber = parseInt(id)
 
   const nextId = idAsNumber + 1
+  const prevId = idAsNumber - 1
 
   if(idAsNumber === 70){
       return new NextResponse(`<!DOCTYPE html><html><head>
     <title>This is frame 70</title>
     <meta property="fc:frame" content="vNext" />
-    <meta property="fc:frame:image" content="${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/QmNaSuySTij37PwXjMmSHHC5BcRSChajGymtY1ztXK4Prg/70.png" />
+    <meta property="fc:frame:image" content="${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/QmU3VNMc91F9oDZcyAJuSnK5hB9FzM6mbfxu6t5qqeRAvW/70.png" />
     <meta property="fc:frame:button:1" content="Blockstories" />
     <meta property="fc:frame:button:1:action" content="post_redirect" />
     <meta property="fc:frame:button:2" content="Blog post Tutorial" />
@@ -24,9 +25,13 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
   return new NextResponse(`<!DOCTYPE html><html><head>
     <title>This is frame ${id}</title>
     <meta property="fc:frame" content="vNext" />
-    <meta property="fc:frame:image" content="${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/QmNaSuySTij37PwXjMmSHHC5BcRSChajGymtY1ztXK4Prg/${id}.png" />
-    <meta property="fc:frame:button:1" content="Next Startup" />
+    <meta property="fc:frame:image" content="${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/QmU3VNMc91F9oDZcyAJuSnK5hB9FzM6mbfxu6t5qqeRAvW/${id}.png" />
+    <meta property="fc:frame:button:1" content="Previous Startup" />
+    <meta property="fc:frame:post_url" content="${process.env.NEXT_PUBLIC_BASE_URL}/api/frame?id=${prevId}" />
+    <meta property="fc:frame:button:2" content="Next Startup" />
     <meta property="fc:frame:post_url" content="${process.env.NEXT_PUBLIC_BASE_URL}/api/frame?id=${nextId}" />
+    <meta property="fc:frame:button:2" content="Complete List" />
+    <meta property="fc:frame:post_url" content="${process.env.NEXT_PUBLIC_BASE_URL}/api/frame?id=${71}" />
   </head></html>`);
   }
 }

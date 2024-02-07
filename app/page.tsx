@@ -1,7 +1,7 @@
 import { getFrameMetadata } from '@coinbase/onchainkit';
 import type { Metadata } from 'next';
 
-let cid = "QmNaSuySTij37PwXjMmSHHC5BcRSChajGymtY1ztXK4Prg";
+let cid = "QmU3VNMc91F9oDZcyAJuSnK5hB9FzM6mbfxu6t5qqeRAvW";
 
 const frameMetadata = getFrameMetadata({
   buttons: [
