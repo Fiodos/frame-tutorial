@@ -13,12 +13,12 @@ export async function POST(req: NextRequest): Promise<Response> {
   } else if (buttonId === 3) {
     path = "video";
   } else {
-    path = "video";
+    path = "";
   }
   const headers = new Headers();
   headers.set("Location", `${process.env.NEXT_PUBLIC_BASE_URL}/`);
   const response = NextResponse.redirect(
-    `${process.env.NEXT_PUBLIC_BASE_URL}/${path}`,
+    `${process.env.NEXT_PUBLIC_BASE_URL}/cosmiccowboys`,
     {
       headers: headers,
       status: 302,
