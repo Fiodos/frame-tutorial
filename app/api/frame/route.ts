@@ -27,8 +27,11 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
     <meta property="fc:frame" content="vNext" />
     <meta property="fc:frame:image" content="${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/QmU3VNMc91F9oDZcyAJuSnK5hB9FzM6mbfxu6t5qqeRAvW/${id}.png" />
     <meta property="fc:frame:button:1" content="Previous Startup" />
+    <meta property="fc:frame:button:1:action" content="post_redirect" />
     <meta property="fc:frame:button:2" content="Next Startup" />
+    <meta property="fc:frame:button:2:action" content="post_redirect" />
     <meta property="fc:frame:button:3" content="Complete List" />
+    <meta property="fc:frame:button:3:action" content="post_redirect" />
     <meta property="fc:frame:post_url" content="${process.env.NEXT_PUBLIC_BASE_URL}/api/buttons" />
   </head></html>`);
   }
