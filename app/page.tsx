@@ -29,7 +29,6 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <h1>Blockstories Startups to Watch</h1>
     </>
   );
 }
