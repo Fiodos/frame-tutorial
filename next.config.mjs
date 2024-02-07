@@ -4,8 +4,8 @@ const nextConfig = {
   async redirects(){
     return [
       {
-        source: '/cosmiccowboys',
-        destination: 'https://cosmiccowboys.cloud',
+        source: '/blockstories',
+        destination: 'https://blockstories.de',
         permanent: true
       },
       {
