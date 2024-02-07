@@ -1,23 +1,25 @@
 import { getFrameMetadata } from '@coinbase/onchainkit';
 import type { Metadata } from 'next';
 
+let cid = "QmNaSuySTij37PwXjMmSHHC5BcRSChajGymtY1ztXK4Prg";
+
 const frameMetadata = getFrameMetadata({
   buttons: [
     {
       label: "Begin"
     }
   ],
-  image: `${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/Qme4FXhoxHHfyzTfRxSpASbMF8kajLEPkRQWhwWu9pkUjm/0.png`,
+  image: `${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/${cid}/45.png`,
   post_url: `${process.env.NEXT_PUBLIC_BASE_URL}/api/frame?id=1`,
 });
 
 export const metadata: Metadata = {
-  title: 'Cosmic Cowboys',
-  description: 'A frame telling the story of Cosmic Cowboys',
+  title: 'Blockstories Startups to Watch',
+  description: '24 most promising startups to watch in the DACH region',
   openGraph: {
-    title: 'Cosmic Cowboys',
-    description: 'A frame telling the story of Cosmic Cowboys',
-    images: [`${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/Qme4FXhoxHHfyzTfRxSpASbMF8kajLEPkRQWhwWu9pkUjm/0.png`],
+    title: 'Blockstories Startups to Watch',
+    description: '24 most promising startups to watch in the DACH region',
+    images: [`${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/${cid}/45.png`],
   },
   other: {
     ...frameMetadata,
@@ -27,7 +29,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <h1>Cosmic Cowboys</h1>
+      <h1>Blockstories Startups to Watch</h1>
     </>
   );
 }
