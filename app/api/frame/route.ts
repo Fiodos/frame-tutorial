@@ -6,7 +6,6 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
   const idAsNumber = parseInt(id)
 
   const nextId = idAsNumber + 1
-  const prevId = idAsNumber - 1
 
   if(idAsNumber === 70){
       return new NextResponse(`<!DOCTYPE html><html><head>
