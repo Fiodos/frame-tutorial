@@ -6,7 +6,7 @@ let cid = "QmWSZ2bAeBArZbsfPhS47iNkxL9aDTbhtvwiAAEzYusNDC";
 const frameMetadata = getFrameMetadata({
   buttons: [
     {
-      label: "Begin"
+      label: "Let's go!"
     }
   ],
   image: `${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/${cid}/45.png`,
