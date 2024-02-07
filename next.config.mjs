@@ -4,19 +4,24 @@ const nextConfig = {
   async redirects(){
     return [
       {
+        source: '/',
+        destination: 'https://blockstories.de',
+        permanent: true
+      },
+      {
         source: '/cosmiccowboys',
         destination: 'https://cosmiccowboys.cloud',
-        permanent: false
+        permanent: true
       },
       {
         source: '/pinatacloud',
         destination: 'https://www.pinata.cloud/blog/how-to-make-a-frame-on-farcaster-using-ipfs',
-        permanent: false
+        permanent: true
       },
       {
         source: '/video',
         destination: 'https://youtu.be/wUt5NjXHSO4',
-        permanent: false
+        permanent: true
       }
     ]
   }
