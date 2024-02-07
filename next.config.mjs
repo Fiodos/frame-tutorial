@@ -6,7 +6,7 @@ const nextConfig = {
       {
         source: '/',
         destination: 'https://blockstories.de',
-        permanent: true
+        permanent: false
       },
       {
         source: '/cosmiccowboys',
