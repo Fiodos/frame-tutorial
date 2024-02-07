@@ -10,7 +10,8 @@ const frameMetadata = getFrameMetadata({
     }
   ],
   image: `${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/${cid}/45.png`,
-  post_url: `${process.env.NEXT_PUBLIC_BASE_URL}/api/frame?id=1`,
+  // post_url: `${process.env.NEXT_PUBLIC_BASE_URL}/api/frame?id=1`,
+  post_url: `https://frame-tutorial-roan.vercel.app/`,
 });
 
 export const metadata: Metadata = {
