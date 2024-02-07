@@ -12,7 +12,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
       return new NextResponse(`<!DOCTYPE html><html><head>
     <title>This is frame 70</title>
     <meta property="fc:frame" content="vNext" />
-    <meta property="fc:frame:image" content="${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/QmU3VNMc91F9oDZcyAJuSnK5hB9FzM6mbfxu6t5qqeRAvW/70.png" />
+    <meta property="fc:frame:image" content="${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/QmWSZ2bAeBArZbsfPhS47iNkxL9aDTbhtvwiAAEzYusNDC/70.png" />
     <meta property="fc:frame:button:1" content="Full Startup Profiles (German)" />
     <meta property="fc:frame:button:1:action" content="post_redirect" />
     <meta property="fc:frame:post_url" content="${process.env.NEXT_PUBLIC_BASE_URL}/api/end" />
@@ -21,7 +21,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
   return new NextResponse(`<!DOCTYPE html><html><head>
     <title>This is frame ${id}</title>
     <meta property="fc:frame" content="vNext" />
-    <meta property="fc:frame:image" content="${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/QmU3VNMc91F9oDZcyAJuSnK5hB9FzM6mbfxu6t5qqeRAvW/${id}.png" />
+    <meta property="fc:frame:image" content="${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/QmWSZ2bAeBArZbsfPhS47iNkxL9aDTbhtvwiAAEzYusNDC/${id}.png" />
     <meta property="fc:frame:button:1" content="Next Startup" />
     <meta property="fc:frame:post_url" content="${process.env.NEXT_PUBLIC_BASE_URL}/api/frame?id=${nextId}" />
   </head></html>`);
