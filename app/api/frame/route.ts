@@ -13,7 +13,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
     <meta property="fc:frame" content="vNext" />
     <meta property="fc:frame:image" content="${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/QmNaSuySTij37PwXjMmSHHC5BcRSChajGymtY1ztXK4Prg/70.png" />
     <meta property="fc:frame:button:1" content="Blockstories Startups to Watch" />
-    <meta property="fc:frame:button:1:action" content="post_redirect" />
+    <meta property="fc:frame:button:1:action" content="${process.env.NEXT_PUBLIC_BASE_URL}/" />
     <meta property="fc:frame:button:2" content="Blog post Tutorial" />
     <meta property="fc:frame:button:2:action" content="post_redirect" />
     <meta property="fc:frame:button:3" content="Video Tutorial" />
